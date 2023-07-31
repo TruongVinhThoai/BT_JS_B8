@@ -132,11 +132,16 @@ function soNguyento() {
 function demSonguyen() {
   function dem(arr) {
     var count = 0;
-    for (var i = 0; i < arr.length; i++) {
-      if (Number.isInteger(arr[i])) {
+    // for (var i = 0; i < arr.length; i++) {
+    //   if (Number.isInteger(arr[i])) {
+    //     count++;
+    //   }
+    // }
+    arr.forEach(function (item) {
+      if (Number.isInteger(item)) {
         count++;
       }
-    }
+    });
     return count;
   }
 
